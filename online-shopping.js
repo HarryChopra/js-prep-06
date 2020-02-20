@@ -28,3 +28,5 @@ const total = () => {
 };
 
 const removeFromCart = () => {};
+
+const placeOrder = () => {};
