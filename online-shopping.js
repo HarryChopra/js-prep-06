@@ -26,3 +26,5 @@ const total = () => {
 	cart.forEach(item => (totalSum += item.itemPrice));
 	return totalSum;
 };
+
+const removeFromCart = () => {};
