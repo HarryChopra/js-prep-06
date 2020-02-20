@@ -30,3 +30,5 @@ const total = () => {
 const removeFromCart = () => {};
 
 const placeOrder = () => {};
+
+const viewCart = () => {};
