@@ -27,7 +27,10 @@ const total = () => {
 	return totalSum;
 };
 
-const removeFromCart = () => {};
+const removeFromCart = item => {
+	let itemIndex = cart.findIndex(elem => elem['itemName'] == item);
+	itemIndex > -1 ? cart.splice(itemIndex, 1) : console.log('That item is not in your cart.');
+};
 
 const placeOrder = () => {};
 
