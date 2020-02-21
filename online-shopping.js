@@ -48,4 +48,10 @@ const placeOrder = card => {
 	}
 };
 
-const viewCart = () => {};
+addToCart('Banana');
+addToCart('Apple');
+addToCart('Ginger');
+console.log(viewCart());
+removeFromCart('Ginger');
+console.log(placeOrder(123456));
+console.log(viewCart());
