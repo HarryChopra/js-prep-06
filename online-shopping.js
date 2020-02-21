@@ -29,9 +29,21 @@ const total = () => {
 
 const removeFromCart = item => {
 	let itemIndex = cart.findIndex(elem => elem['itemName'] == item);
-	itemIndex > -1 ? cart.splice(itemIndex, 1) : console.log('That item is not in your cart.');
+
+	if (itemIndex > -1) {
+		cart.splice(itemIndex, 1);
+		return cart;
+	} else {
+		return 'That item is not in your cart';
+	}
 };
 
-const placeOrder = () => {};
+const placeOrder = card => {
+	if (card == undefined) {
+		console.log("Sorry, we don't have a credit card on file for you.");
+	} else {
+		return `Your total cost is ${total()}, which will be charged to the card ${card}.`;
+	}
+};
 
 const viewCart = () => {};
