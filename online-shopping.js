@@ -40,9 +40,11 @@ const removeFromCart = item => {
 
 const placeOrder = card => {
 	if (card == undefined) {
-		console.log("Sorry, we don't have a credit card on file for you.");
+		return "Sorry, we don't have a credit card on file for you.";
 	} else {
-		return `Your total cost is ${total()}, which will be charged to the card ${card}.`;
+		let message = `Your total cost is ${total()}, which will be charged to the card ${card}.`;
+		cart = [];
+		return message;
 	}
 };
 
