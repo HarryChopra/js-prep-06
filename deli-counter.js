@@ -24,5 +24,4 @@ const currentLine = queue => {
 	}
 	return message;
 };
-
 export { katzDeliLine, takeANumber, currentLine, nowServing };
