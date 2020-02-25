@@ -51,6 +51,7 @@ const placeOrder = card => {
 addToCart('Banana');
 addToCart('Apple');
 addToCart('Ginger');
+
 console.log(viewCart());
 removeFromCart('Ginger');
 console.log(placeOrder(123456));
